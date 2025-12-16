@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Yudha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&auto=format&fit=crop&w=1920') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(2px);
+            color: #e6e6e6;
+            overflow-x: hidden;
+        }
+
+        /* ===== ANIMASI ===== */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background: linear-gradient(90deg, #0f141a, #182028);
+            padding: 28px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            color: #cfd9e6;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.45);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        /* ===== FOTO PROFIL BULAT ===== */
+        .hero img {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4fa3ff;
+            box-shadow: 0 0 25px rgba(79,163,255,0.4), 
+                        0 0 60px rgba(79,163,255,0.2);
+            transition: 0.6s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px rgba(79,163,255,0.8);
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 38px;
+            color: #d3e3ff;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 45px auto;
+            background: linear-gradient(145deg, #11161d, #0d1318);
+            padding: 38px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+        }
+
+        .section h2 {
+            margin-bottom: 18px;
+            font-size: 26px;
+            color: #a8c4ff;
+            border-left: 4px solid #4fa3ff;
+            padding-left: 12px;
+        }
+
+        ul li {
+            margin: 9px 0;
+        }
+
+        /* ===== HUBUNGI SAYA ===== */
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            background: linear-gradient(135deg, #4fa3ff, #1e6fd9);
+            transition: 0.4s;
+        }
+
+        .contact a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(79,163,255,0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            color: #7c8a9e;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Portfolio</h2>
+</header>
+
+<section class="hero">
+    <!-- Ganti path jika perlu -->
+    <img src="foto/yudha.jpg" alt="Foto Profil Yudha">
+    <h1>Yudha Septiana</h1>
+    <p>Mahasiswa | Programmer | Web Developer</p>
+</section>
+
+<section class="section">
+    <h2>Tentang Saya</h2>
+    <p>
+        Saya tertarik pada pengembangan web, desain sistem, dan teknologi.
+        Saya senang mempelajari hal baru serta mengerjakan proyek yang menantang.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Keahlian</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React & Vite</li>
+        <li>Backend Python</li>
+        <li>Database & API</li>
+    </ul>
+</section>
+
+<section class="section">
+    <h2>Proyek</h2>
+    <ul>
+        <li>Aplikasi Manajemen Sayuran</li>
+        <li>Sistem Pemesanan Online</li>
+        <li>Website Dashboard Penjualan</li>
+    </ul>
+</section>
+
+<section class="section">
+    <h2>Sertifikat</h2>
+    <ul>
+        <li>Dicoding - Dasar Pemrograman Web</li>
+        <li>Dicoding - Dasar Python</li>
+        <li>FreeCodeCamp - Responsive Web Design</li>
+        <li>Google Cloud - Cloud Computing Basics</li>
+    </ul>
+</section>
+
+<!-- ===== HUBUNGI SAYA ===== -->
+<section class="section contact">
+    <h2>Hubungi Saya</h2>
+    <a href="https://wa.me/628xxxxxxxxxx" target="_blank">WhatsApp</a>
+    <a href="yudhasetiana711@gmail.com">Email</a>
+    <a href="https://www.instagram.com/yudhaseptiana458/?next=%2F" target="_blank">Instagram</a>
+</section>
+
+<footer>
+    © 2025 Yudha Septiana - Portfolio
+</footer>
+
+</body>
+</html>
